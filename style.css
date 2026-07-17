@@ -15,6 +15,7 @@
   /* White */
   --white: #FAFAFA;
 }
+
 /*       size / L-height / L-spacing / weight
 
 Text preset 1 4rem     / 110% / 0px / 900
@@ -26,9 +27,9 @@ Text preset 5 1rem     / 150% / 0px / 900
 *,
 *::after,
 *::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -52,24 +53,24 @@ body {
   margin-inline: auto;
 }
 
-                                                /* Section 1 */
+/* Section 1 */
 
 /* Logo */
 
 .header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 3rem;
-    margin-bottom: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3rem;
+  margin-bottom: 4rem;
 }
 
 /* All users image */
 
 #all-users {
-    display: block;
-    width: 100%;
-    transform: scale(1.14);
+  display: block;
+  width: 100%;
+  transform: scale(1.14);
 }
 
 #users-left,
@@ -78,15 +79,18 @@ body {
 }
 
 /* All text information */
+.hero {
+  margin-bottom: 3rem;
+}
 
 .hero__content,
-.hero__actions  { 
+.hero__actions {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  padding: 48px 32px;
+  padding: 0 32px;
   margin: auto;
 }
 
@@ -94,14 +98,15 @@ body {
   font-size: 3rem;
   font-weight: 900;
   line-height: 110%;
+  margin-top: 3rem;
 }
 
 .hero__text {
-font-size: 1.125rem;
-font-weight: 500;
-line-height: 110%;
-color: var(--slate-600);
-padding: 1.5rem 0;
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 110%;
+  color: var(--slate-600);
+  padding: 1.5rem 0;
 }
 
 /* Buttons */
@@ -117,6 +122,8 @@ padding: 1.5rem 0;
   transition: 0.3 ease;
 }
 
+/* Download Button */
+
 .download-btn {
   background-color: var(--cyan-600);
 }
@@ -125,24 +132,48 @@ padding: 1.5rem 0;
   color: var(--cyan-300);
 }
 
+/* Info Button */
+
 .secondary-btn {
   background-color: var(--purple-600);
   margin-top: 1rem;
 }
 
+/* Download Button Footer  */
+
+.download-btn-purple {
+  background-color: var(--purple-600);
+}
+
+.download-btn-purple span {
+  color: var(--purple-300);
+}
 
 
+/* Decorative Divider  */
 
+.divider {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 4rem;
+}
 
+.divider__line {
+  width: 1px;
+  height: 80px;
+  background-color: var(--slate-300);
+}
 
-
-
-
-
-
-
-
-
+.divider__circle span {
+    padding: 16px 19px;
+    border: 1px solid var(--slate-300);
+    border-radius: 50%;
+    color: var(--slate-600);
+    font-weight: 900;
+    line-height: 150%;
+    background-color: var(--white);
+}
 
 
 
