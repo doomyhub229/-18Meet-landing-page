@@ -1,0 +1,181 @@
+:root {
+  /* Cyan */
+  --cyan-300: #8FE3F9;
+  --cyan-600: #4D96A9;
+
+  /* Purple */
+  --purple-300: #D9B8FF;
+  --purple-600: #855FB1;
+
+  /* Slate */
+  --slate-300: #D1D1DF;
+  --slate-600: #87879D;
+  --slate-900: #28283D;
+
+  /* White */
+  --white: #FAFAFA;
+}
+/*       size / L-height / L-spacing / weight
+
+Text preset 1 4rem     / 110% / 0px / 900
+Text preset 2 2.5rem   / 110% / 0px / 900
+Text preset 3 1rem     / 110% / 4px / 900
+Text preset 4 1.125rem / 110% / 0px / 500
+Text preset 5 1rem     / 150% / 0px / 900
+ */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 1rem;
+  background-color: var(--white);
+  color: var(--slate-900);
+}
+
+.page {
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.hero__content,
+.features__content,
+.footer__content {
+  width: min(100% - 2rem, 33.75rem);
+  margin-inline: auto;
+}
+
+                                                /* Section 1 */
+
+/* Logo */
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+    margin-bottom: 4rem;
+}
+
+/* All users image */
+
+#all-users {
+    display: block;
+    width: 100%;
+    transform: scale(1.14);
+}
+
+#users-left,
+#users-right {
+  display: none;
+}
+
+/* All text information */
+
+.hero__content,
+.hero__actions  { 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 48px 32px;
+  margin: auto;
+}
+
+.hero__title {
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 110%;
+}
+
+.hero__text {
+font-size: 1.125rem;
+font-weight: 500;
+line-height: 110%;
+color: var(--slate-600);
+padding: 1.5rem 0;
+}
+
+/* Buttons */
+
+.btn {
+  display: block;
+  border: none;
+  padding: 16px 40px;
+  border-radius: 29px;
+  font-weight: 900;
+  line-height: 150%;
+  color: var(--white);
+  transition: 0.3 ease;
+}
+
+.download-btn {
+  background-color: var(--cyan-600);
+}
+
+.version {
+  color: var(--cyan-300);
+}
+
+.secondary-btn {
+  background-color: var(--purple-600);
+  margin-top: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Meqia Query <1024px */
+
+/*
+@media (min-width: 1024px) {
+  #users-left,
+  #users-right {
+    display: block;
+  }
+
+  #all-users {
+    display: none;
+  }
+}
