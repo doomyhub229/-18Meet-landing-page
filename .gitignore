@@ -14,3 +14,11 @@
 # Avoid your project being littered with annoying .DS_Store files!
 .DS_Store
 .prettierignore
+# Windows
+Thumbs.db
+Desktop.ini
+# VS Code (opțional)
+.vscode/
+# AI asistent 
+AGENTS.md
+CLAUDE.md
