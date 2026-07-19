@@ -43,7 +43,7 @@ body {
 .page {
   width: 100%;
   min-height: 100vh;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .hero__content,
@@ -90,12 +90,11 @@ body {
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  padding: 0 32px;
   margin: auto;
 }
 
 .hero__title {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 900;
   line-height: 110%;
   margin-top: 3rem;
@@ -104,7 +103,7 @@ body {
 .hero__text {
   font-size: 1.125rem;
   font-weight: 500;
-  line-height: 110%;
+  line-height: 150%;
   color: var(--slate-600);
   padding: 1.5rem 0;
 }
@@ -119,7 +118,8 @@ body {
   font-weight: 900;
   line-height: 150%;
   color: var(--white);
-  transition: 0.3 ease;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
 }
 
 /* Download Button */
@@ -132,11 +132,19 @@ body {
   color: var(--cyan-300);
 }
 
+.download-btn:hover {
+  background-color: #71C0D4;
+}
+
 /* Info Button */
 
 .secondary-btn {
   background-color: var(--purple-600);
   margin-top: 1rem;
+}
+
+.secondary-btn:hover {
+  background-color: #B18BDD;
 }
 
 /* Download Button Footer  */
@@ -149,6 +157,9 @@ body {
   color: var(--purple-300);
 }
 
+.download-btn-purple:hover {
+  background-color: #B18BDD;
+}
 
 /* Decorative Divider  */
 
@@ -165,16 +176,29 @@ body {
   background-color: var(--slate-300);
 }
 
-.divider__circle span {
-    padding: 16px 19px;
-    border: 1px solid var(--slate-300);
-    border-radius: 50%;
-    color: var(--slate-600);
-    font-weight: 900;
-    line-height: 150%;
-    background-color: var(--white);
+.divider__circle {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--slate-300);
+  border-radius: 50%;
+  background-color: var(--white);
 }
 
+.divider__circle span {
+    color: var(--slate-600);
+    font-weight: 900;
+    line-height: 1;
+}
+
+#divider-footer {
+  position: relative;
+  z-index: 2;
+  margin-bottom: -28px;
+  padding-bottom: 0;
+}
 
  /* Features & Gallery Section  */
 
@@ -192,12 +216,14 @@ body {
 }
 
 .features__img {
+  display: block;
   width: 100%;
-  max-width: 325px;
-  overflow: hidden;
+  aspect-ratio: 1;
+  object-fit: cover;
   border-radius: 16px;
 }
 
+/* Features Content  */
 
 .features__content {
   display: flex;
@@ -235,7 +261,39 @@ body {
   color: var(--slate-600);
 }
 
+/* Footer */
 
+.footer {
+  background-image:
+    linear-gradient(rgba(77, 150, 169, 0.85), rgba(77, 150, 169, 0.85)),
+    url("./assets/desktop/image-footer.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.footer__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 64px 32px;
+  color: var(--white);
+  text-align: center;
+}
+
+.footer__title {
+  font-size: 2.2rem;
+  line-height: 110%;
+  font-weight: 900;
+}
+
+.footer__text {
+  line-height: 150%;
+  font-size: 1.125rem;
+  font-weight: 500;
+  padding: 1.5rem 0;
+}
 
 
 
