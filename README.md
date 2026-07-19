@@ -1,6 +1,6 @@
 # Frontend Mentor - Meet landing page solution
 
-This is a solution to the [Meet landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/meet-landing-page-rbTDS6OUR). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is my solution to the **Meet landing page** challenge on Frontend Mentor. The project helped me practice building responsive layouts using a mobile-first workflow and improve my CSS layout skills.
 
 ## Table of contents
 
@@ -15,9 +15,6 @@ This is a solution to the [Meet landing page challenge on Frontend Mentor](https
   - [Useful resources](#useful-resources)
   - [AI Collaboration](#ai-collaboration)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -25,98 +22,77 @@ This is a solution to the [Meet landing page challenge on Frontend Mentor](https
 
 Users should be able to:
 
-- View the optimal layout depending on their device's screen size
-- See hover states for interactive elements
+- View the optimal layout for the site depending on their device's screen size.
+- See hover and focus states for all interactive elements.
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![Project screenshot](./assets/screenshot.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL:[My Code on GitHub] (https://github.com/doomyhub229/-18Meet-landing-page)
+- Live Site URL: [Live Website on GitHub Pages] (https://doomyhub229.github.io/-18Meet-landing-page/)
 
 ## My process
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
+- Semantic HTML5
+- CSS3
+- Mobile-first workflow
 - Flexbox
 - CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+- CSS Custom Properties
+- Media Queries
+- BEM naming convention
+- Git & GitHub
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+During this project, I practiced building a responsive landing page from a Figma design using a mobile-first approach.
 
-To see how you can add code snippets, see below:
+One technique I found particularly useful was combining `min()` with responsive spacing to keep the content centered while preventing it from becoming too wide.
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+.hero__content,
+.features__content,
+.footer__content {
+  width: min(100% - 2rem, 33.75rem);
+  margin-inline: auto;
 }
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+I also improved my understanding of Flexbox, CSS Grid, responsive images, and organizing styles with CSS custom properties and reusable utility classes.
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+For future projects, I would like to continue improving:
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+- Advanced CSS Grid layouts.
+- Accessibility best practices.
+- Writing cleaner and more reusable CSS.
+- Creating more scalable responsive layouts.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [Frontend Mentor](https://www.frontendmentor.io/)
+- [MDN Web Docs](https://developer.mozilla.org/)
+- [CSS-Tricks](https://css-tricks.com/)
 
 ### AI Collaboration
 
-Describe how you used AI tools (if any) during this project. This helps demonstrate your ability to work effectively with AI assistants.
+I used ChatGPT as a learning assistant throughout this project. It helped me:
 
-- What tools did you use (e.g., ChatGPT, Claude, GitHub Copilot)?
-- How did you use them (e.g., debugging, generating boilerplate, brainstorming solutions)?
-- What worked well? What didn't?
+- Review my HTML and CSS structure.
+- Debug responsive layout issues.
+- Improve accessibility with hover and focus states.
+- Better understand Flexbox and CSS Grid.
+- Refine the layout to more closely match the Figma design.
 
-**Note: Delete this note and the content above if you didn't use AI, or replace with your own experience.**
+All implementation, testing, and final code decisions were completed and reviewed by me.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- Frontend Mentor - [@doomyhub229](https://www.frontendmentor.io/profile/doomyhub229)
+- GitHub - [@doomyhub229](https://github.com/doomyhub229)
